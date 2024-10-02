@@ -1,0 +1,186 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Use Flexbox for layout */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; /* Space between left and right items */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Center items vertically */
+  padding: 20px; /* Add padding to header */
+  background-color: #f8f9fa; /* Optional: background color for header */
+}
+.header .nav-left a {
+  text-decoration: none; /* No underline */
+  font-size: 20px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #000; /* Link color */
+}
+.header .nav-right ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Display list items in a row */
+  gap: 20px; /* Space between navigation links */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+.header .nav-right ul li a {
+  text-decoration: none; /* No underline */
+  font-weight: bold;
+  color: #000; /* Link color */
+  font-size: 16px; /* Adjust size as needed */
+}
+
+.header-label {
+  font-size: 22px;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.description {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 20px 0;
+}
+
+.top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-top: 40px;
+}
+.top-content .left-side {
+  width: 100%;
+}
+.top-content .left-side .header-label {
+  font-size: 22px;
+  font-family: "Mulish";
+  font-weight: bold;
+  margin: 25px 0;
+}
+.top-content .left-side .description {
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 26px;
+  padding: 20px 0;
+}
+.top-content .right-side {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.top-content .right-side .left {
+  max-width: 95%;
+  width: 100%;
+}
+.top-content .right-side .left .input-field {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+.top-content .right-side .left .input-field :first-child {
+  padding-top: 0px;
+}
+.top-content .right-side .left .input-field input {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #c1c8cb;
+  outline: none;
+  color: #000; /* Change text color to black */
+  caret-color: black;
+  background-color: transparent;
+}
+.top-content .right-side .left .btn-container {
+  padding: 20px;
+}
+.top-content .right-side .left .btn-container button {
+  width: 125px;
+  height: 50px;
+  background: #4a4ff2;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.portrait {
+  padding: 10px;
+}
+.portrait img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; /* Space between footer items */
+  padding: 20px; /* Padding for footer */
+  font-size: 16px; /* Font size for footer */
+}
+.footer .nav-left a {
+  text-decoration: none; /* No underline */
+}
+.footer .nav-left a img {
+  width: 120px;
+}
+.footer .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px; /* Space between footer links */
+}
+.footer .nav-right ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Display list items in a row */
+  gap: 20px; /* Space between navigation links */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+.footer .nav-right ul li a {
+  color: #0077B5; /* Change color to your desired link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the link text bold */
+}
+.footer .nav-right ul li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.footer span {
+  font-weight: bold; /* Bold footer text */
+}
+.footer .social-icons {
+  width: 80px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

@@ -1,0 +1,244 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home container styling */
+.home {
+  display: flex;
+  width: auto;
+  border: 2px ;
+  margin: 10px auto;
+}
+
+/* Header styles */
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  font-size: 24px;
+  line-height: 1;
+  border: 1px solid black;
+  padding: 0px 8px;
+  margin: 0 auto;
+}
+
+.progress-text {
+  margin-left: 600px;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header2,
+.header3 {
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+}
+
+/* Grid container styling */
+.grid-container {
+  display: grid;
+  gap: 8px;
+  padding: 6px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(32, 1fr);
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio of images */
+}
+
+/* Specific image placements */
+.image1 {
+  grid-row: 1 / span 7;
+  grid-column: 1 / span 1;
+}
+
+/* Additional image placements follow the same pattern */
+.image2 {
+  grid-row: 1 / span 6;
+  grid-column: 2 / span 1;
+}
+
+.image3 {
+  grid-row: 1 / span 10;
+  grid-column: 3 / span 1;
+}
+
+.image4 {
+  grid-row: 8 / span 8;
+  grid-column: 1 / span 1;
+}
+
+.image5 {
+  grid-row: 7 / span 7;
+  grid-column: 2 / span 1;
+}
+
+.image6 {
+  grid-row: 11 / span 7;
+  grid-column: 3 / span 1;
+}
+
+.image7 {
+  grid-row: 16 / span 8;
+  grid-column: 1 / span 1;
+}
+
+.image8 {
+  grid-row: 14 / span 9;
+  grid-column: 2 / span 1;
+}
+
+.image9 {
+  grid-row: 18 / span 9;
+  grid-column: 3 / span 1;
+}
+
+.image10 {
+  grid-row: 24 / span 9;
+  grid-column: 1 / span 1;
+}
+
+.image11 {
+  grid-row: 23 / span 10;
+  grid-column: 2 / span 1;
+}
+
+.image12 {
+  grid-row: 27 / span 6;
+  grid-column: 3 / span 1;
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex; /* Use flexbox to position elements */
+  justify-content: space-between; /* Space between intro text and service lists */
+  margin-bottom: 20px; /* Space below intro section */
+  padding: 0 20px; /* Padding around the section */
+}
+
+.intro-text h1 {
+  width: 60%; /* Width for intro text */
+  font-size: 22px; /* Font size for intro text */
+  line-height: 1.5; /* Line height for intro text */
+}
+
+/* Styling for service lists to align them horizontally */
+.service-lists {
+  display: flex; /* Use flexbox for horizontal alignment */
+  width: 40%; /* Total width for service lists */
+  justify-content: space-between; /* Space between lists */
+}
+
+.service-list {
+  text-align: right; /* Right align text */
+  width: 50%; /* Each list takes up half of the service-lists container */
+}
+
+.service-list ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.service-list ul li {
+  font-size: 14px; /* Font size for list items */
+  color: grey; /* Color for list items */
+  margin-bottom: 10px; /* Space below list items */
+}
+
+/* Divider line styling */
+.divider {
+  border: 0;
+  border-top: 1px solid #ccc; /* Top border for dividers */
+  margin: 20px 0; /* Margin for dividers */
+}
+/* Awards Section as per previous CSS */
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr 0.5fr; /* Adjust columns as necessary */
+  grid-gap: 20px; /* Space between grid items */
+  padding: 0 20px; /* Padding for awards grid */
+}
+
+.award-row {
+  display: contents; /* Keeps layout consistent */
+  padding: 20px 0; /* Padding for rows */
+}
+
+.award-title {
+  font-weight: bold; /* Bold title */
+}
+
+.award-details {
+  font-weight: bold; /* Bold details */
+}
+
+.award-info {
+  font-size: 14px; /* Font size for info */
+  color: grey; /* Color for info */
+  margin-top: 5px; /* Space above info to prevent overlap with line */
+}
+
+.award-year {
+  text-align: right; /* Align year text to the right */
+  font-weight: bold; /* Bold year text */
+}
+
+/* Divider line styling for awards section */
+.divider {
+  border: 0;
+  border-top: 1px solid #ccc; /* Top border for dividers */
+  margin: 20px 0; /* Space below divider */
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Space between footer items */
+  padding: 20px; /* Padding for footer */
+  font-size: 16px; /* Font size for footer */
+}
+
+.footer span {
+  font-weight: bold; /* Bold footer text */
+}
+
+.footer-right {
+  display: flex;
+  gap: 40px; /* Space between footer links */
+  align-items: center; /* Center vertically */
+}
+
+.footer-right a {
+  color: #0077B5; /* Change color to your desired link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the link text bold */
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.social-icons {
+  width: 80px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
