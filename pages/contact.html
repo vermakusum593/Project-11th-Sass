@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Sass Project</title>
-  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="../styles/contact.css"> <!-- Ensure you compile your SCSS to CSS -->
+  <link rel="stylesheet" href="../styles/reset.css">
 </head>
 
 <body>
   <main>
-    <!-- Header Section -->
+    <!-- Header -->
     <nav class="header">
+      <div class="nav-left">
+        <a href="../index.html" target="_blank">Genesis</a>
+      </div>
       <div class="nav-right">
         <ul class="links">
           <li><a href="./project.html">Project</a></li>
@@ -59,22 +62,20 @@
     <div class="portrait">
       <img src="../imges/Map.jpg" alt="Map" />
     </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-      <div class="nav-left">
-        <!-- Removed logo from footer -->
-      </div>
-      <div class="nav-right">
-        <ul class="links">
-          <li><a href="./project.html">Project</a></li>
-          <li><a href="./contact.html">Contact us</a></li>
-        </ul>
-        <div class="media">
-          <img src="../images/Social.svg" alt="Social media icons" />
-        </div>
-      </div>
-    </div>
   </main>
+
+  <hr class="divider">
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="nav-left">
+      <a href="../index.html" target="_blank">Genesis</a>
+    </div>
+    <div class="footer-right">
+      <a href="project.html" target="_blank">Project</a>
+      <a href="contact.html" target="_blank">Contact us</a>
+      <img src="../imges/social-media.svg" alt="Social Media Icons" class="social-icons" />
+    </div>
+  </footer>
 </body>
 </html>

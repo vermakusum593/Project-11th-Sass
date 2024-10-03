@@ -1,194 +1,98 @@
-// Global styles (optional)
+// Global styles
 body {
   font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 // Styling for the header
 .header {
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space between left and right items */
-  align-items: center; /* Center items vertically */
-  padding: 20px; /* Add padding to header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   background-color: #f8f9fa; /* Optional: background color for header */
+}
 
-  .nav-left {
-    a {
-      text-decoration: none; /* No underline */
-      font-size: 20px; /* Adjust size as needed */
-      font-weight: bold;
-      color: #000; /* Link color */
-    }
-  }
-
-  .nav-right {
-    ul {
-      list-style: none;
-      display: flex; /* Display list items in a row */
-      gap: 20px; /* Space between navigation links */
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
-
-      li {
-        a {
-          text-decoration: none; /* No underline */
-          font-weight: bold;
-          color: #000; /* Link color */
-          font-size: 16px; /* Adjust size as needed */
-        }
-      }
-    }
+.nav-left {
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
   }
 }
 
-// Styling for the header label
-.header-label {
-  font-size: 22px;
-  font-family: "Mulish", sans-serif;
-  font-weight: bold;
-  margin: 25px 0;
-}
+.nav-right {
+  margin-left: auto; /* Pushes the nav-right section to the right */
 
-// Styling for the description text
-.description {
-  font-family: "Mulish", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 20px 0;
-}
-
-// Top content section styles
-.top-content {
-  display: flex;
-  padding: 10px;
-  margin-top: 40px;
-
-  .left-side {
-    width: 100%;
-
-    .header-label {
-      font-size: 22px;
-      font-family: "Mulish";
-      font-weight: bold;
-      margin: 25px 0;
-    }
-
-    .description {
-      font-family: "Mulish";
-      font-size: 16px;
-      line-height: 26px;
-      padding: 20px 0;
-    }
-  }
-
-  .right-side {
-    width: 100%;
+  ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 30px; /* Adds space between the links */
+    padding: 0;
+    margin: 0;
+  }
 
-    .left {
-      max-width: 95%;
-      width: 100%;
-
-      .input-field {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-
-        :first-child {
-          padding-top: 0px;
-        }
-
-        input {
-          height: 50px;
-          border: none;
-          border-bottom: 1px solid #c1c8cb;
-          outline: none;
-          color: #000; /* Change text color to black */
-          caret-color: black;
-          background-color: transparent;
-        }
-      }
-
-      .btn-container {
-        padding: 20px;
-
-        button {
-          width: 125px;
-          height: 50px;
-          background: #4a4ff2;
-          color: white;
-          text-transform: uppercase;
-          font-family: "Roboto";
-          font-size: 12px;
-          cursor: pointer;
-        }
-      }
+  li {
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+      font-size: 16px;
     }
   }
 }
 
-// Styling for the portrait image section
-.portrait {
-  padding: 10px;
-
-  img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-// Footer styling
+// Footer styling remains the same
 .footer {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-size: 16px;
   display: flex;
-  justify-content: space-between; /* Space between footer items */
-  padding: 20px; /* Padding for footer */
-  font-size: 16px; /* Font size for footer */
+  justify-content: center;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+  }
 
   .nav-left {
     a {
-      text-decoration: none; /* No underline */
-      img {
-        width: 120px; // Adjust size as needed
-      }
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
     }
   }
 
-  .nav-right {
+  .footer-right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between footer links */
+    margin-left: auto;
+    gap: 20px;
 
-    ul {
-      list-style: none;
-      display: flex; /* Display list items in a row */
-      gap: 20px; /* Space between navigation links */
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
+    a {
+      color: #0077B5;
+      text-decoration: none;
+      font-weight: bold;
 
-      li {
-        a {
-          color: #0077B5; /* Change color to your desired link color */
-          text-decoration: none; /* Remove underline */
-          font-weight: bold; /* Make the link text bold */
-
-          &:hover {
-            text-decoration: underline; /* Add underline on hover */
-          }
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
-  }
-
-  span {
-    font-weight: bold; /* Bold footer text */
   }
 
   .social-icons {
-    width: 80px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    height: auto;
   }
 }
