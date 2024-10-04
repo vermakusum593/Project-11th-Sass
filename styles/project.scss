@@ -1,4 +1,4 @@
-// Global styles (optional)
+
 body {
   font-family: "Mulish", sans-serif;
   margin: 0;
@@ -6,44 +6,44 @@ body {
   box-sizing: border-box;
 }
 
-// Styling for the header
+
 .header {
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space between left and right items */
-  align-items: center; /* Center items vertically */
-  padding: 20px; /* Add padding to header */
-  background-color: #f8f9fa; /* Optional: background color for header */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; 
+  background-color: #f8f9fa; 
 
   .nav-left {
     a {
-      text-decoration: none; /* No underline */
-      font-size: 20px; /* Adjust size as needed */
+      text-decoration: none; 
+      font-size: 20px; 
       font-weight: bold;
-      color: #000; /* Link color */
+      color: #000; 
     }
   }
 
   .nav-right {
     ul {
       list-style: none;
-      display: flex; /* Display list items in a row */
-      gap: 20px; /* Space between navigation links */
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
+      display: flex; 
+      gap: 20px; 
+      padding: 0; 
+      margin: 0; 
 
       li {
         a {
-          text-decoration: none; /* No underline */
+          text-decoration: none;
           font-weight: bold;
-          color: #000; /* Link color */
-          font-size: 16px; /* Adjust size as needed */
+          color: #000; 
+          font-size: 16px; 
         }
       }
     }
   }
 }
 
-// Styling for the header label
+
 .header-label {
   font-size: 22px;
   font-family: "Mulish", sans-serif;
@@ -51,7 +51,7 @@ body {
   margin: 25px 0;
 }
 
-// Styling for the description text
+
 .description {
   font-family: "Mulish", sans-serif;
   font-size: 16px;
@@ -59,19 +59,19 @@ body {
   padding: 20px 0;
 }
 
-// Top content section styles
+
 .top-content {
   display: flex;
   padding: 10px;
   margin-top: 40px;
 
-  // Left side section
+
   .left-side {
     max-width: 70%;
     width: 100%;
   }
 
-  // Right side section
+
   .right-side {
     max-width: 30%;
     width: 100%;
@@ -79,7 +79,6 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
 
-    // Styling for the grid table inside right side
     .grid-table {
       display: grid;
       grid-template-columns: 1fr;
@@ -87,7 +86,7 @@ body {
       max-width: 300px;
       padding: 10px;
 
-      // Each table item styling
+    
       .table-item {
         display: flex;
         justify-content: space-between;
@@ -98,13 +97,13 @@ body {
           padding-top: 0;
         }
 
-        // Label styling
+        
         .label {
           color: #949191;
           font-weight: bold;
         }
 
-        // Value styling
+        
         .value {
           font-weight: bold;
           padding-left: 15px;
@@ -114,44 +113,42 @@ body {
   }
 }
 
-// Styling for the portrait image section
+
 .portrait {
   padding: 10px;
 
   img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
   }
 }
 
-// Styling for the image gallery section
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 10px;
 
-  // Each grid item styling
+  
   .grid-item {
     img {
       width: 100%;
-      height: auto; /* Maintain aspect ratio */
+      height: auto; 
     }
   }
-}
 
-// Footer styling
 .footer {
   display: flex;
-  justify-content: space-between; /* Space between footer items */
-  padding: 20px; /* Padding for footer */
-  font-size: 16px; /* Font size for footer */
+  justify-content: space-between;
+  padding: 20px; 
+  font-size: 16px; } 
 
   .nav-left {
     a {
-      text-decoration: none; /* No underline */
+      text-decoration: none; 
       img {
-        width: 120px; // Adjust size as needed
+        width: 120px; 
       }
     }
   }
@@ -159,25 +156,26 @@ body {
   .footer-right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between footer links */
+    gap: 20px; }
+
 
     a {
-      color: #0077B5; /* Change color to your desired link color */
-      text-decoration: none; /* Remove underline */
-      font-weight: bold; /* Make the link text bold */
+      color: #0077B5; 
+      text-decoration: none; 
+      font-weight: bold; 
 
       &:hover {
-        text-decoration: underline; /* Add underline on hover */
+        text-decoration: underline; 
       }
     }
   }
 
   span {
-    font-weight: bold; /* Bold footer text */
+    font-weight: bold; 
   }
 
   .social-icons {
-    width: 80px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px; 
+    height: auto; 
   }
-}
+

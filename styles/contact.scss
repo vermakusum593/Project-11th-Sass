@@ -1,4 +1,4 @@
-// Global styles
+
 body {
   font-family: "Mulish", sans-serif;
   margin: 0;
@@ -9,13 +9,13 @@ body {
   flex-direction: column;
 }
 
-// Styling for the header
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f8f9fa; /* Optional: background color for header */
+  background-color: #f8f9fa; 
 }
 
 .nav-left {
@@ -28,12 +28,11 @@ body {
 }
 
 .nav-right {
-  margin-left: auto; /* Pushes the nav-right section to the right */
-
+  margin-left: auto; 
   ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Adds space between the links */
+    gap: 30px; 
     padding: 0;
     margin: 0;
   }
@@ -48,7 +47,7 @@ body {
   }
 }
 
-// Footer styling remains the same
+
 .footer {
   width: 100%;
   background-color: #f8f9fa;
